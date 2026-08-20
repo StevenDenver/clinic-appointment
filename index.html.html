@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarePoint Clinic | Appointment Portal</title>
+  <style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f7f9fc;color:#172033}button,input,select,textarea{font:inherit}.header{height:76px;background:#fff;border-bottom:1px solid #e7eaf0;display:flex;align-items:center;padding:0 7%;gap:28px;position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;margin-right:auto}.logo{width:40px;height:40px;border-radius:12px;background:#176b5c;color:#fff;display:grid;place-items:center;font-size:23px}.brand strong,.brand span{display:block}.brand span{font-size:11px;color:#7b8494;margin-top:2px}.header nav{display:flex;gap:24px}.header nav a{color:#596376;text-decoration:none;font-size:13px;font-weight:700}.header nav a:hover{color:#176b5c}.theme-btn{border:0;background:#eef3f1;border-radius:9px;padding:9px;cursor:pointer}.hero{background:#edf7f4;min-height:480px;padding:75px 10%;display:grid;grid-template-columns:1.4fr .6fr;gap:50px;align-items:center}.badge,.section-title>span{font-size:11px;letter-spacing:1.5px;font-weight:800;color:#176b5c}.hero h1{font-size:55px;line-height:1.05;margin:13px 0}.hero h1 span{color:#176b5c}.hero p{max-width:650px;color:#637082;line-height:1.7}.hero-actions{display:flex;gap:10px;margin:25px 0}.primary-btn,.outline-btn{padding:12px 18px;border-radius:9px;font-weight:800;cursor:pointer}.primary-btn{background:#176b5c;color:white;border:1px solid #176b5c}.outline-btn{background:transparent;color:#176b5c;border:1px solid #176b5c}.primary-btn:hover{filter:brightness(.94)}.trust-row{display:flex;gap:22px;color:#637082;font-size:12px}.hero-card{background:white;padding:30px;border-radius:18px;box-shadow:0 18px 50px #21473b16;border:1px solid #e2e9e6}.medical-icon{font-size:55px}.hero-card h3{margin:16px 0 6px}.hero-card p{margin:0 0 4px}.hero-card strong{color:#176b5c}.hero-card hr{border:0;border-top:1px solid #edf0f3;margin:22px 0}.hero-card small{color:#7c8595;line-height:1.5}.section{padding:75px 10%}.section-title{text-align:center;margin-bottom:30px}.section-title h2{font-size:32px;margin:8px 0}.section-title p{color:#7c8595;margin:0}.doctor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.doctor-card{border:1px solid #e4e8ee;background:#fff;border-radius:14px;padding:20px;display:flex;align-items:center;gap:15px;text-align:left;cursor:pointer}.doctor-card:hover{border-color:#176b5c;transform:translateY(-2px);transition:.2s}.doctor-card>div:nth-child(2){flex:1}.doctor-avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#e4f2ee;color:#176b5c;font-weight:900}.doctor-card h3{margin:0 0 4px;font-size:15px}.doctor-card p{margin:0;color:#7c8595;font-size:12px}.doctor-card>span{font-size:25px;color:#9ba4b3}.booking-section{background:#f1f5f4}.booking-layout{display:grid;grid-template-columns:1.5fr .5fr;gap:20px;align-items:start}.form-card,.summary-card,.contact-card{background:#fff;border:1px solid #e1e7e5;border-radius:16px;padding:26px}.steps{display:flex;align-items:center;margin-bottom:26px}.step{display:flex;align-items:center;gap:7px;color:#9aa2ae;font-size:11px}.step.active{color:#176b5c}.step{font-weight:800}.step:first-letter{display:grid}.steps i{height:1px;background:#dce2e5;flex:1;margin:0 10px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{font-size:12px;font-weight:800;color:#4f596b}label.full{grid-column:1/-1}input,select,textarea{display:block;width:100%;margin-top:7px;border:1px solid #dfe4ea;border-radius:8px;padding:11px 12px;background:#fff;color:#172033;outline:none}input:focus,select:focus,textarea:focus{border-color:#176b5c;box-shadow:0 0 0 3px #e4f2ee}textarea{resize:vertical}.error-box{display:none;background:#fff1f1;color:#b83e3e;border:1px solid #f0cccc;border-radius:8px;padding:11px;margin:18px 0;font-size:12px}.error-box.show{display:block}.submit-btn{width:100%;margin-top:18px}.privacy{text-align:center;color:#8a93a0;font-size:10px}.summary-card{position:sticky;top:96px}.summary-card h3{margin-top:0}.summary-line{padding:14px 0;border-bottom:1px solid #eef0f2}.summary-line span{display:block;color:#8a93a0;font-size:11px;margin-bottom:5px}.summary-line strong{font-size:13px}.summary-card hr{border:0;border-top:1px solid #eef0f2;margin:20px 0}.summary-card p{color:#7c8595;font-size:12px}.contact-section{background:#fff}.contact-card{max-width:620px;margin:auto;display:flex;gap:18px;align-items:center}.contact-icon{width:52px;height:52px;border-radius:12px;background:#e4f2ee;display:grid;place-items:center;font-size:24px}.contact-card h3{margin:0 0 3px}.contact-card p{margin:0 0 10px;color:#7c8595;font-size:12px}.contact-card a{display:block;color:#176b5c;text-decoration:none;font-size:13px;font-weight:700;margin-top:5px}footer{background:#172b27;color:#d9e4e1;padding:25px 10%;display:flex;justify-content:space-between;font-size:12px}.modal{display:none;position:fixed;inset:0;background:#14201db8;z-index:30;place-items:center;padding:20px}.modal.show{display:grid}.modal-box{background:#fff;border-radius:18px;padding:35px;max-width:450px;text-align:center}.success-icon{width:60px;height:60px;border-radius:50%;background:#e4f5ed;color:#16834b;font-size:34px;display:grid;place-items:center;margin:auto}.modal-box h2{margin:18px 0 8px}.modal-box p{color:#667184;line-height:1.6}.modal-box .small{font-size:12px}.modal-box .primary-btn{width:100%;margin-top:10px}body.dark{background:#121a18;color:#edf4f1}body.dark .header,body.dark .doctor-card,body.dark .form-card,body.dark .summary-card,body.dark .contact-card,body.dark .modal-box{background:#1b2724;border-color:#30413c}body.dark .header nav a,body.dark .doctor-card p,body.dark .hero p,body.dark .section-title p,body.dark .summary-card p,body.dark .contact-card p{color:#aab8b3}body.dark .hero,body.dark .booking-section{background:#15211f}body.dark input,body.dark select,body.dark textarea{background:#1b2724;color:#edf4f1;border-color:#3a4a46}body.dark .theme-btn{background:#30413c}@media(max-width:850px){.header{padding:0 4%;gap:12px}.header nav{display:none}.hero{grid-template-columns:1fr;padding:55px 7%}.hero h1{font-size:43px}.section{padding:55px 7%}.doctor-grid,.booking-layout{grid-template-columns:1fr}.summary-card{position:static}.form-grid{grid-template-columns:1fr}label.full{grid-column:auto}.trust-row{flex-wrap:wrap}footer{padding:22px 7%;gap:10px;flex-direction:column}}
+
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">✚</div>
+      <div><strong>CarePoint Clinic</strong><span>Appointment Portal</span></div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointment">Book Appointment</a>
+      <a href="#contact">Inquiries</a>
+    </nav>
+    <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <span class="badge">PATIENT-FRIENDLY ONLINE SERVICE</span>
+        <h1>Healthcare made<br><span>simple.</span></h1>
+        <p>Book a clinic appointment in a few quick steps. Choose a doctor, select a convenient schedule, and receive instant confirmation.</p>
+        <div class="hero-actions">
+          <button class="primary-btn" data-scroll="appointment">Book an Appointment</button>
+          <button class="outline-btn" data-scroll="doctors">View Doctors</button>
+        </div>
+        <div class="trust-row"><span>✓ Easy booking</span><span>✓ Clear schedule</span><span>✓ Instant feedback</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="medical-icon">🩺</div>
+        <h3>Clinic Hours</h3>
+        <p>Monday – Saturday</p>
+        <strong>8:00 AM – 6:00 PM</strong>
+        <hr>
+        <small>Appointments are subject to doctor availability.</small>
+      </div>
+    </section>
+
+    <section id="doctors" class="section">
+      <div class="section-title"><span>OUR TEAM</span><h2>Choose your doctor</h2><p>Select a specialist that matches your healthcare needs.</p></div>
+      <div class="doctor-grid">
+        <button class="doctor-card" data-doctor="Dr. Maria Santos" data-specialty="General Medicine">
+          <div class="doctor-avatar">MS</div><div><h3>Dr. Maria Santos</h3><p>General Medicine</p></div><span>›</span>
+        </button>
+        <button class="doctor-card" data-doctor="Dr. James Reyes" data-specialty="Pediatrics">
+          <div class="doctor-avatar">JR</div><div><h3>Dr. James Reyes</h3><p>Pediatrics</p></div><span>›</span>
+        </button>
+        <button class="doctor-card" data-doctor="Dr. Anna Cruz" data-specialty="Dermatology">
+          <div class="doctor-avatar">AC</div><div><h3>Dr. Anna Cruz</h3><p>Dermatology</p></div><span>›</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="appointment" class="section booking-section">
+      <div class="section-title"><span>ONLINE BOOKING</span><h2>Book an appointment</h2><p>Complete the form below. Required fields are marked with *.</p></div>
+
+      <div class="booking-layout">
+        <form id="appointmentForm" class="form-card" novalidate>
+          <div class="steps"><span class="step active">1 <b>Patient Details</b></span><i></i><span class="step">2 <b>Appointment</b></span><i></i><span class="step">3 <b>Confirmation</b></span></div>
+
+          <div class="form-grid">
+            <label>Full Name *<input id="name" type="text" placeholder="Enter your full name" autocomplete="name"></label>
+            <label>Phone Number *<input id="phone" type="tel" placeholder="09XX XXX XXXX" autocomplete="tel"></label>
+            <label>Email Address<input id="email" type="email" placeholder="you@example.com" autocomplete="email"></label>
+            <label>Doctor *
+              <select id="doctor">
+                <option value="">Select a doctor</option>
+                <option>Dr. Maria Santos — General Medicine</option>
+                <option>Dr. James Reyes — Pediatrics</option>
+                <option>Dr. Anna Cruz — Dermatology</option>
+              </select>
+            </label>
+            <label>Appointment Date *<input id="date" type="date"></label>
+            <label>Preferred Time *
+              <select id="time">
+                <option value="">Select a time</option>
+                <option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option>
+                <option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option>
+                <option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option>
+              </select>
+            </label>
+            <label class="full">Reason for Visit *
+              <select id="reason">
+                <option value="">Select a reason</option>
+                <option>General Check-up</option><option>Follow-up Consultation</option>
+                <option>Fever / Cold / Flu</option><option>Skin Concern</option>
+                <option>Child Consultation</option><option>Other</option>
+              </select>
+            </label>
+            <label class="full">Additional Notes <textarea id="notes" rows="3" placeholder="Optional: briefly describe your concern"></textarea></label>
+          </div>
+
+          <div class="error-box" id="errorBox" role="alert"></div>
+          <button class="primary-btn submit-btn" type="submit">Confirm Appointment</button>
+          <p class="privacy">🔒 Your information is used only to process this appointment request.</p>
+        </form>
+
+        <aside class="summary-card">
+          <h3>Appointment Summary</h3>
+          <div class="summary-line"><span>Doctor</span><strong id="sumDoctor">Not selected</strong></div>
+          <div class="summary-line"><span>Date</span><strong id="sumDate">Not selected</strong></div>
+          <div class="summary-line"><span>Time</span><strong id="sumTime">Not selected</strong></div>
+          <div class="summary-line"><span>Visit</span><strong id="sumReason">Not selected</strong></div>
+          <hr>
+          <p>Need help before booking?</p>
+          <strong>Contact us through the inquiry details below.</strong>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-title"><span>NEED HELP?</span><h2>Clinic inquiries</h2><p>For questions about appointments, schedules, or clinic services, contact:</p></div>
+      <div class="contact-card">
+        <div class="contact-icon">💬</div>
+        <div><h3>Steven Denver S. Buenaventura</h3><p>Clinic Inquiry Contact</p><a href="mailto:stevendenverbuenaventura2006@gmail.com">stevendenverbuenaventura2006@gmail.com</a><a href="tel:09206628533">0920 662 8533</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><strong>CarePoint Clinic</strong><span>© 2026 • Appointment Portal</span></footer>
+
+  <div class="modal" id="successModal" aria-hidden="true">
+    <div class="modal-box">
+      <div class="success-icon">✓</div>
+      <h2>Appointment Request Confirmed!</h2>
+      <p id="confirmationText"></p>
+      <p class="small">Please arrive 10 minutes before your scheduled appointment.</p>
+      <button class="primary-btn" id="closeModal">Done</button>
+    </div>
+  </div>
+
+  <script>
+const $=id=>document.getElementById(id);
+document.querySelectorAll("[data-scroll]").forEach(b=>b.addEventListener("click",()=>$(b.dataset.scroll).scrollIntoView({behavior:"smooth"})));
+
+document.querySelectorAll(".doctor-card").forEach(card=>{
+  card.addEventListener("click",()=>{
+    $("doctor").value=card.dataset.doctor+" — "+card.dataset.specialty;
+    $("doctor").dispatchEvent(new Event("change"));
+    $("appointment").scrollIntoView({behavior:"smooth"});
+  });
+});
+
+const dateInput=$("date");
+const today=new Date();
+const localDate=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().split("T")[0];
+dateInput.min=localDate;
+
+function updateSummary(){
+  $("sumDoctor").textContent=$("doctor").value||"Not selected";
+  $("sumDate").textContent=$("date").value?new Date($("date").value+"T00:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}):"Not selected";
+  $("sumTime").textContent=$("time").value||"Not selected";
+  $("sumReason").textContent=$("reason").value||"Not selected";
+}
+["doctor","date","time","reason"].forEach(id=>$(id).addEventListener("change",updateSummary));
+
+$("appointmentForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const errors=[];
+  const name=$("name").value.trim(), phone=$("phone").value.trim(), doctor=$("doctor").value, date=$("date").value, time=$("time").value, reason=$("reason").value, email=$("email").value.trim();
+  if(name.length<2) errors.push("Enter your full name.");
+  if(!/^09\d{9}$/.test(phone.replace(/[\s-]/g,""))) errors.push("Enter a valid Philippine mobile number.");
+  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push("Enter a valid email address or leave it blank.");
+  if(!doctor) errors.push("Select a doctor.");
+  if(!date) errors.push("Select an appointment date.");
+  if(date && date<localDate) errors.push("Please select today or a future date.");
+  if(!time) errors.push("Select a preferred time.");
+  if(!reason) errors.push("Select a reason for your visit.");
+
+  const box=$("errorBox");
+  if(errors.length){
+    box.innerHTML="<strong>Please check:</strong><ul>"+errors.map(x=>"<li>"+x+"</li>").join("")+"</ul>";
+    box.classList.add("show");
+    return;
+  }
+  box.classList.remove("show");
+  const prettyDate=new Date(date+"T00:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+  $("confirmationText").textContent=`Thank you, ${name}. Your appointment request with ${doctor.split(" — ")[0]} is scheduled for ${prettyDate} at ${time}.`;
+  $("successModal").classList.add("show");
+  $("successModal").setAttribute("aria-hidden","false");
+});
+
+$("closeModal").addEventListener("click",()=>{
+  $("successModal").classList.remove("show");
+  $("successModal").setAttribute("aria-hidden","true");
+  $("appointmentForm").reset();
+  updateSummary();
+});
+$("successModal").addEventListener("click",e=>{if(e.target.id==="successModal")$("closeModal").click();});
+
+$("themeBtn").addEventListener("click",()=>{
+  document.body.classList.toggle("dark");
+  localStorage.setItem("clinicTheme",document.body.classList.contains("dark")?"dark":"light");
+});
+if(localStorage.getItem("clinicTheme")==="dark")document.body.classList.add("dark");
+
+</script>
+</body>
+</html>
